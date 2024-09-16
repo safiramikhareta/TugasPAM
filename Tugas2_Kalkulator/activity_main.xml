@@ -1,0 +1,70 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/angka1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="@string/hint"
+        android:ems="10"
+        android:inputType="numberDecimal"/>
+
+    <EditText
+        android:id="@+id/angka2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="@string/hint"
+        android:ems="10"
+        android:inputType="numberDecimal"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroupOperator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp">
+
+        <RadioButton
+            android:id="@+id/radioTambah"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tambah" />
+
+        <RadioButton
+            android:id="@+id/radioKurang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kurang" />
+
+        <RadioButton
+            android:id="@+id/radioKali"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kali" />
+
+        <RadioButton
+            android:id="@+id/radioBagi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bagi" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/hitung"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/tbHitung"
+        android:onClick="prosesHitung"/>
+
+</LinearLayout>
